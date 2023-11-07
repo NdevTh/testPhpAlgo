@@ -1,0 +1,127 @@
+FONCTIONS_UTILISEES
+// ordre alphabet
+VARIABLES
+
+    nom1 EST_DU_TYPE CHAINE
+    nom2 EST_DU_TYPE CHAINE
+    nom3 EST_DU_TYPE CHAINE
+DEBUT_ALGORITHME
+   
+    AFFICHER "Veuillez saisair le nom1"
+    LIRE nom1
+    AFFICHER "Veuillez saisair le nom2"
+    LIRE nom2
+    AFFICHER "Veuillez saisair le nom3"
+    LIRE nom3
+
+SI (nom1<nom2 ET nom2<nom3) ALORS
+    DEBUT_SI
+        // Instructions si la condition "nom1>nom2 ET nom2>nom3" est vérifiée.
+        AFFICHER* "les noms sont dans l'ordre croissant"
+  		FIN_SI
+  		 SINON
+        DEBUT_SINON  
+				SI (nom1>nom2 ET nom2>nom3) ALORS
+        DEBUT_SI
+        AFFICHER* "les noms sont dans l'ordre décroissant"  
+    			FIN_SI 
+    			SINON
+    				DEBUT_SINON
+    				  AFFICHER* "Les noms sont dans le désordre"
+    				FIN_SINON           
+            // Instructions dans tous les autres cas.
+          
+        FIN_SINON
+FIN_ALGORITHME
+
+// nombre paire impaire
+FONCTIONS_UTILISEES
+VARIABLES
+    nbr EST_DU_TYPE NOMBRE 
+DEBUT_ALGORITHME
+AFFICHER* "saire un nombre"
+LIRE nbr
+SI (nbr %2 ==1) ALORS
+    DEBUT_SI
+      AFFICHER "c'est un nombre impaire"
+
+    FIN_SI
+    SINON
+        DEBUT_SINON
+            AFFICHER "c'est un nombre paire"
+            
+        FIN_SINON
+FIN_ALGORITHME
+
+// connaitre le nombre de caracte et le nbre de mot
+FONCTIONS_UTILISEES
+VARIABLES
+    ch EST_DU_TYPE CHAINE
+    longueur EST_DU_TYPE NOMBRE
+    Mots EST_DU_TYPE NOMBRE
+    i EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	Mots PREND_LA_VALEUR 0
+    AFFICHER "saisir une phrase"
+    LIRE ch
+    longueur PREND_LA_VALEUR ch.length
+    AFFICHER "il y a "
+    AFFICHERCALCUL longueur
+    AFFICHER " caractère. "
+    POUR i ALLANT_DE 0 A longueur-1
+        DEBUT_POUR
+         SI (ch.substr(i,1)==" ") ALORS
+            DEBUT_SI
+                Mots PREND_LA_VALEUR Mots+1
+            FIN_SI
+        FIN_POUR
+        AFFICHER "Et la phrase contient "  
+        AFFICHERCALCUL  Mots+1
+        AFFICHER " mots"
+FIN_ALGORITHME
+
+// ---->>>>>>consonnes et voyelle
+
+FONCTIONS_UTILISEES
+VARIABLES
+    ch EST_DU_TYPE CHAINE
+    nbc EST_DU_TYPE NOMBRE
+    nbv EST_DU_TYPE NOMBRE
+    i EST_DU_TYPE NOMBRE
+    lettre EST_DU_TYPE CHAINE
+DEBUT_ALGORITHME
+    // Votre algorithme ici ! 🤓
+    nbc PREND_LA_VALEUR 0
+    nbv PREND_LA_VALEUR 0
+    AFFICHER "entrer une phrase "
+    LIRE ch
+    POUR i ALLANT_DE 1 A ch.length 
+        DEBUT_POUR
+            // Les instructions qui seront réalisées de valeurInitiale à valeurFinale fois, en comptant de 1 en 1.
+            lettre PREND_LA_VALEUR ch.substr(i,1)
+            SI (lettre =="a" OU lettre =="e" OU lettre =="i" OU lettre =="o" OU lettre =="u" OU lettre =="y") ALORS
+                DEBUT_SI
+                    // Instructions si la condition "lettre =="A"" est vérifiée.
+                    nbv PREND_LA_VALEUR nbv+1
+                FIN_SI
+                SINON
+                    DEBUT_SINON
+                        // Instructions dans tous les autres cas.
+                      SI (lettre!=" ") ALORS
+                        DEBUT_SI
+                            // Instructions si la condition "lettre==" "" est vérifiée.
+                            nbc PREND_LA_VALEUR nbc+1
+                        FIN_SI  
+                    FIN_SINON
+        FIN_POUR
+ AFFICHER "nombre de consonnes :"
+ AFFICHER nbc
+ AFFICHER "nombre de voyelles :"
+ AFFICHER nbv
+FIN_ALGORITHME
+
+
+DEBUT_ALGORITHME
+    // Votre algorithme ici ! 🤓
+    
+FIN_ALGORITHME
