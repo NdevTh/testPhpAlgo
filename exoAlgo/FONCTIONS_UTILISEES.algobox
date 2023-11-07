@@ -89,6 +89,7 @@ VARIABLES
     nbv EST_DU_TYPE NOMBRE
     i EST_DU_TYPE NOMBRE
     lettre EST_DU_TYPE CHAINE
+
 DEBUT_ALGORITHME
     // Votre algorithme ici ! 🤓
     nbc PREND_LA_VALEUR 0
@@ -120,7 +121,7 @@ DEBUT_ALGORITHME
  AFFICHER nbv
 FIN_ALGORITHME
 
-
+// 
 DEBUT_ALGORITHME
     // Votre algorithme ici ! 🤓
     
