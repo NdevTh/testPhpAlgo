@@ -123,6 +123,7 @@ FIN_ALGORITHME
 
 // 
 DEBUT_ALGORITHME
+   phrase EST_DU_TYPE CHAINE
     // Votre algorithme ici ! 🤓
     
 FIN_ALGORITHME
