@@ -34,7 +34,6 @@
 // echo "veuillez entrée une phrase";
 
 
-
 class CompteurDeLettres {
     private $phrase;
 

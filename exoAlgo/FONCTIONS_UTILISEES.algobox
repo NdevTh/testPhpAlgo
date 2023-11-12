@@ -121,9 +121,28 @@ DEBUT_ALGORITHME
  AFFICHER nbv
 FIN_ALGORITHME
 
-// 
+// ---> suppression de caractère
+
+FONCTIONS_UTILISEES
+VARIABLES
+   phrase EST_DU_TYPE CHAINE // stockage 
+   positonCaracter EST_DU_TYPE NOMBRE
+   i EST_DU_TYPE NOMBRE
 DEBUT_ALGORITHME
-   phrase EST_DU_TYPE CHAINE
+    AFFICHER "veuillez saisir une phrase"
+    LIRE phrase
+
+    POUR positonCaracter  =! 0 ALLANT_DE 0 A valeurFinale 
+        DEBUT_POUR
+            // Les instructions qui seront réalisées de 0 à valeurFinale fois, en comptant de 1 en 1.
+            
+        FIN_POUR
+    SI (condition) ALORS
+        DEBUT_SI
+            // Instructions si la condition "condition" est vérifiée.
+            
+        FIN_SI
     // Votre algorithme ici ! 🤓
+
     
 FIN_ALGORITHME
