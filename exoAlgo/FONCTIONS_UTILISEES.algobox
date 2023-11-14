@@ -146,3 +146,19 @@ DEBUT_ALGORITHME
 
     
 FIN_ALGORITHME
+
+
+//----------> nouveau Tableau s'amortissement 
+FONCTIONS_UTILISEES
+VARIABLES
+montant EST_DU_TYPE NOMBRE
+RestRemb EST_DU_TYPE NOMBRE
+mois EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+    // Votre algorithme ici ! 🤓
+    montant PREND_LA_VALEUR 2500;
+    mois PREND_LA_VALEUR 1
+    RestRemb PREND_LA_VALEUR 110
+    TANT QUE 
+FIN_ALGORITHME
+    
