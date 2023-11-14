@@ -18,37 +18,38 @@
 ?> 
 <?php
 //exercice Rebond Ball
-echo"Entrez la hauteur de la balle :";
-$haut=fgets(STDIN); // Lecture 
+// echo"Entrez la hauteur de la balle :";
+// $haut=fgets(STDIN); // Lecture 
 
 
-$rebond=0;
+// $rebond=0;
 
 
-while ($haut>20) {
-    $haut=$haut*0.88;
-    $rebond++;
-    # code...
-}
+// while ($haut>20) {
+//     $haut=$haut*0.88;
+//     $rebond++;
+//     # code...
+// }
 
-echo"nb de rebond" . $rebond ."\n";
-echo"hauteur final ".$haut;
+// echo"nb de rebond" . $rebond ."\n";
+// echo"hauteur final ".$haut;
 
 
 ?>
 
 <?php
-// Exercice Rebond Ball
-// echo "Entrez la hauteur de la balle :";
-// $haut = fgets(STDIN); // Lecture de la hauteur initiale
+// calcul of sinus with for crémenté de 0.1
+for ($x=0; $x <=0.63 ; $x +=0.1 ) {
+    $sinValue = sin($x);
+    echo "x a pour valeur " .$x . "\n"; 
+    echo " son sinus est " . $sinValue  ;
+}
+?>
 
-// $rebond = 0;
-
-// while ($haut > 20) {
-//     $haut = $haut * 0.88; // Calcul de la nouvelle hauteur après rebond
-//     $rebond++; // Incrémenter le nombre de rebonds
-// }
-
-// echo "Nombre de rebonds : " . $rebond . "\n";
-// echo "Hauteur finale : " . $haut . "\n";
+<?php
+// Calculating and displaying the sine of values in increments of 0.1
+for ($x = 0; $x <= 0.63; $x += 0.1) {
+    $sinValue = sin($x); // Calculate the sine of x
+    echo "Sine of " . $x . " is: " . $sinValue . "\n";
+}
 ?>
