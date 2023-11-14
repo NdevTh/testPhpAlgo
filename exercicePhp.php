@@ -39,17 +39,36 @@
 
 <?php
 // calcul of sinus with for crémenté de 0.1
-for ($x=0; $x <=0.63 ; $x +=0.1 ) {
-    $sinValue = sin($x);
-    echo "x a pour valeur " .$x . "\n"; 
-    echo " son sinus est " . $sinValue  ;
-}
+// for ($x=0; $x <=0.63 ; $x +=0.1 ) {
+//     $sinValue = sin($x);
+//     echo "x a pour valeur " .$x . "\n"; 
+//     echo " son sinus est " . $sinValue  ;
+// }
 ?>
 
+
 <?php
-// Calculating and displaying the sine of values in increments of 0.1
-for ($x = 0; $x <= 0.63; $x += 0.1) {
-    $sinValue = sin($x); // Calculate the sine of x
-    echo "Sine of " . $x . " is: " . $sinValue . "\n";
+// Affichage de la table de multiplication
+echo "Veuillez entrer un nombre: ";
+$nombre = fgets(STDIN);
+
+for ($i = 1; $i <= 10; $i++) { 
+    $resultat = $i * $nombre;
+    echo $i . " x " . $nombre . " = " . $resultat . "\n";
 }
+
+echo "Voici la table de " . $nombre;
+?>
+
+
+
+<?php
+// show table multiplication
+echo"veuillez rentrez un nombre";
+$nombre = fgets(STDIN);
+for ($i=0; $i <10 ; $i++) { 
+    $i=$i*$nombre;
+    
+}
+echo " voici la table". $nombre
 ?>
