@@ -17,5 +17,38 @@
 
 ?> 
 <?php
-$haut
+//exercice Rebond Ball
+echo"Entrez la hauteur de la balle :";
+$haut=fgets(STDIN); // Lecture 
+
+
+$rebond=0;
+
+
+while ($haut>20) {
+    $haut=$haut*0.88;
+    $rebond++;
+    # code...
+}
+
+echo"nb de rebond" . $rebond ."\n";
+echo"hauteur final ".$haut;
+
+
+?>
+
+<?php
+// Exercice Rebond Ball
+// echo "Entrez la hauteur de la balle :";
+// $haut = fgets(STDIN); // Lecture de la hauteur initiale
+
+// $rebond = 0;
+
+// while ($haut > 20) {
+//     $haut = $haut * 0.88; // Calcul de la nouvelle hauteur après rebond
+//     $rebond++; // Incrémenter le nombre de rebonds
+// }
+
+// echo "Nombre de rebonds : " . $rebond . "\n";
+// echo "Hauteur finale : " . $haut . "\n";
 ?>
