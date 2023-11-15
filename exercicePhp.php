@@ -48,7 +48,7 @@
 
 
 <?php
-// Affichage de la table de multiplication
+//Affichage de la table de multiplication
 echo "Veuillez entrer un nombre: ";
 $nombre = fgets(STDIN);
 
@@ -64,11 +64,12 @@ echo "Voici la table de " . $nombre;
 
 <?php
 // show table multiplication
-echo"veuillez rentrez un nombre";
-$nombre = fgets(STDIN);
-for ($i=0; $i <10 ; $i++) { 
-    $i=$i*$nombre;
+// echo"veuillez rentrez un nombre";
+
+// $nombre = fgets(STDIN);
+// for ($i=0; $i <10 ; $i++) { 
+//     $i=$i*$nombre;
     
-}
-echo " voici la table". $nombre
+// }
+// echo " voici la table". $nombre;
 ?>
