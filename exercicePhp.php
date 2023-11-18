@@ -130,21 +130,21 @@ echo "nombre de voyelles : " . $resultat['voyelles'] . "\n";
 
 <?php
 //Affichage de la table de multiplication
-// echo "Veuillez entrer un nombre: ";
-// $nombre = fgets(STDIN);
+echo "Veuillez entrer un nombre: ";
+$nombre = fgets(STDIN);
 
-// for ($i = 1; $i <= 10; $i++) { 
-//     $resultat = $i * $nombre;
-//     echo $i . " x " . $nombre . " = " . $resultat . "\n";
-// }
+for ($i = 1; $i <= 10; $i++) { 
+    $resultat = $i * $nombre;
+    echo $i . " x " . $nombre . " = " . $resultat . "\n";
+}
 
-// echo "Voici la table de " . $nombre;
+echo "Voici la table de " . $nombre;
 ?>
 
 
 
 <?php
-// show table multiplication
+//show table multiplication my code false
 // echo"veuillez rentrez un nombre";
 
 // $nombre = fgets(STDIN);
