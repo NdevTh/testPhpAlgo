@@ -132,13 +132,13 @@ echo "nombre de voyelles : " . $resultat['voyelles'] . "\n";
 //Affichage de la table de multiplication
 echo "Veuillez entrer un nombre: ";
 $nombre = fgets(STDIN);
-
+echo "voic résultat de la table".$nombre;
 for ($i = 1; $i <= 10; $i++) { 
     $resultat = $i * $nombre;
     echo $i . " x " . $nombre . " = " . $resultat . "\n";
 }
 
-echo "Voici la table de " . $nombre;
+// echo "Voici la table de " . $nombre;
 ?>
 
 
